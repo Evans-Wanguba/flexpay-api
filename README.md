@@ -8,11 +8,10 @@ This package seeks to help php developers implement the various Mpesa APIs witho
  
  **Configuration**<br>
  At your project root, create a .env file and in it set the consumer key and consumer secret as follows   
- `FLEXPAY_BASE_URL= [base URL]` <br>
  `FLEXPAY_API_KEY= [consumer key]` <br>
  `FLEXPAY_API_SECRET=[consumer secret]`<br>
  `FLEXPAY_TIMEOUT=[timeout]`<br>
- `FLEXPAY_ENV=[live or staging]`<br>
+ `FLEXPAY_ENV=[production or staging]`<br>
 
   
  **Usage**

@@ -6,10 +6,11 @@ return [
     |--------------------------------------------------------------------------
     | base_url: production or staging
     */
-    'base_url' => env('FLEXPAY_BASE_URL', 'https://staging.flexpay.co.ke'),
+    'base_url' => env('FLEXPAY_ENV', 'staging') == 'production' ? 'https://www.flexpay.co.ke' : 'https://staging.flexpay.co.ke',
     'api_key' => env('FLEXPAY_API_KEY'),
     'api_secret' => env('FLEXPAY_API_SECRET'),
     'timeout' => env('FLEXPAY_TIMEOUT', 10),
+    'environment' => env('FLEXPAY_ENV', 'staging'),
     // endpoints (override if Flexpay changes paths)
     'endpoints' => [
         'book' => '/3Api/api/v1/book/flexpay/endpoint',
