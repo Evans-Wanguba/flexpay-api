@@ -22,8 +22,8 @@ web.php:
 use Illuminate\Support\Facades\Route;
 use EvansWanguba\Flexpay\Http\Controllers\WebhookController;
 
-Route::post('flexpay/webhook', [WebhookController::class, 'handle']);```
-
+Route::post('flexpay/webhook', [WebhookController::class, 'handle']);
+```
 
 WebhookController.php
 
@@ -44,7 +44,8 @@ class WebhookController extends Controller
         // You should process asynchronously (dispatch job) - but respond immediately:
         return response()->json(['status' => 'ok'], 200);
     }
-}```
+}
+```
 
 
 **Publishing
@@ -74,7 +75,8 @@ public function bookItem()
     ]);
 
     return response()->json($resp);
-}```
+}
+```
 
 ## Support
 See `sample.php` for more examples. The API documentation is also available in the `docs` folder.
