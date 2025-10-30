@@ -48,7 +48,7 @@ class WebhookController extends Controller
 ```
 
 
-**Publishing
+**Publishing**
 
 Add package to composer or use path repository.
 
@@ -56,7 +56,7 @@ Add package to composer or use path repository.
 
 Set .env keys as shown earlier.
 
-**Example usage in your app (controller)
+**Example**
 ```php
 use Flexpay; // facade
 
