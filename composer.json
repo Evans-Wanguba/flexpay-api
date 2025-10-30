@@ -1,0 +1,32 @@
+{
+  "name": "wanguba/flexipay-laravel",
+  "description": "Laravel wrapper for Flexpay API (booking, checkout, OTP, IPN, webhooks)",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Evans Wanguba",
+      "email": "ewanguba@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "illuminate/support": "^10.0 || ^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wanguba\\Flexpay\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wanguba\\Flexpay\\FlexpayServiceProvider"
+      ],
+      "aliases": {
+        "Flexpay": "Wanguba\\Flexpay\\Facades\\Flexpay"
+      }
+    }
+  }
+}
