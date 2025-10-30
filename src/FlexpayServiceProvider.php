@@ -1,9 +1,9 @@
 <?php
-namespace Wanguba\Flexpay;
+namespace EvansWanguba\Flexpay;
 
 use Illuminate\Support\ServiceProvider;
-use Wanguba\Flexpay\FlexpayClient;
-use Wanguba\Flexpay\Contracts\FlexpayClientContract;
+use EvansWanguba\Flexpay\FlexpayClient;
+use EvansWanguba\Flexpay\Contracts\FlexpayClientContract;
 
 class FlexpayServiceProvider extends ServiceProvider
 {

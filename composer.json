@@ -16,16 +16,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Wanguba\\Flexpay\\": "src/"
+      "EvansWanguba\\Flexpay\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Wanguba\\Flexpay\\FlexpayServiceProvider"
+        "EvansWanguba\\Flexpay\\FlexpayServiceProvider"
       ],
       "aliases": {
-        "Flexpay": "Wanguba\\Flexpay\\Facades\\Flexpay"
+        "Flexpay": "EvansWanguba\\Flexpay\\Facades\\Flexpay"
       }
     }
   }

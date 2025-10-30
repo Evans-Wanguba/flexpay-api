@@ -1,8 +1,8 @@
 <?php
-namespace Wanguba\Flexpay;
+namespace EvansWanguba\Flexpay;
 
 use GuzzleHttp\Client;
-use Wanguba\Flexpay\Contracts\FlexpayClientContract;
+use EvansWanguba\Flexpay\Contracts\FlexpayClientContract;
 use GuzzleHttp\Exception\GuzzleException;
 
 class FlexpayClient implements FlexpayClientContract

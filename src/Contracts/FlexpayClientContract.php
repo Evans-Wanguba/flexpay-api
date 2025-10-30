@@ -1,5 +1,5 @@
 <?php
-namespace Wanguba\Flexpay\Contracts;
+namespace EvansWanguba\Flexpay\Contracts;
 
 interface FlexpayClientContract
 {

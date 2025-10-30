@@ -13,9 +13,6 @@ This package seeks to help php developers implement the various Mpesa APIs witho
  `FLEXPAY_API_SECRET=[consumer secret]`<br>
  `FLEXPAY_TIMEOUT=[timeout]`<br>
  `FLEXPAY_ENV=[live or staging]`<br>
- For Laravel users, open the Config/App.php file and add `\Safaricom\Mpesa\MpesaServiceProvider::class` under providers and ` 'Mpesa'=> \Safaricom\Mpesa\MpesaServiceProvider::class` under aliases.
-  
-  _Remember to edit the consumer_key and consumer_secret values appropriately when switching between sandbox and live_
 
   
  **Usage**
@@ -23,7 +20,7 @@ This package seeks to help php developers implement the various Mpesa APIs witho
  routes/web.php (or routes/api.php):
 
 `use Illuminate\Support\Facades\Route;
-use Wanguba\Flexpay\Http\Controllers\WebhookController;
+use EvansWanguba\Flexpay\Http\Controllers\WebhookController;
 
 Route::post('flexpay/webhook', [WebhookController::class, 'handle']);`
 
@@ -31,7 +28,7 @@ Route::post('flexpay/webhook', [WebhookController::class, 'handle']);`
 src/Http/Controllers/WebhookController.php
 
 `<?php
-namespace Wanguba\Flexpay\Http\Controllers;
+namespace EvansWanguba\Flexpay\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;`
 class WebhookController extends Controller
@@ -53,7 +50,7 @@ class WebhookController extends Controller
 
 Add package to composer or use path repository.
 
-`Run php artisan vendor:publish --provider="Wanguba\Flexpay\FlexpayServiceProvider" --tag="flexpay-config" to publish config.`
+`Run php artisan vendor:publish --provider="EvansWanguba\Flexpay\FlexpayServiceProvider" --tag="flexpay-config" to publish config.`
 
 Set .env keys as shown earlier.
 
