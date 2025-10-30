@@ -1,5 +1,5 @@
 {
-  "name": "evans-wanguba/flexipay-laravel",
+  "name": "evans-wanguba/flexipay-api",
   "description": "Laravel wrapper for Flexpay API (booking, checkout, OTP, IPN, webhooks)",
   "type": "library",
   "license": "MIT",
