@@ -1,6 +1,6 @@
 **Introduction**
 
-This package seeks to help php developers implement the various Mpesa APIs without much hustle. It is based on the REST API whose documentation is available on https://www.flexpay.co.ke/flexpay-api-documentation.
+This is a non-official PHP package for handling Flexpay Lipa Polepole API. It is based on the REST API whose documentation is available on https://www.flexpay.co.ke/flexpay-api-documentation.
  
 **Installation using composer**<br>
 `composer require evans-wanguba/flexpay-api`<br>

@@ -1,6 +1,6 @@
 {
   "name": "evans-wanguba/flexipay-api",
-  "description": "Laravel wrapper for Flexpay API (booking, checkout, OTP, IPN, webhooks)",
+  "description": "This is a non-official PHP package for handling Flexpay Lipa Polepole API.",
   "type": "library",
   "license": "MIT",
   "authors": [
